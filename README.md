@@ -3,7 +3,7 @@ The Swift Playground I submitted for 2018 WWDC Scholarship: Explaining Colors
 
 # About this Playground
 
-[![Screenshot of the app.](Screenshot.png)]
+[![Screenshot of the app.](https://github.com/Tantalum73/WWDC18ScholarshipSubmission/blob/master/Screenshot.jpeg)]
 This playground is designed to teach developers the basics of digital color representation. It starts with human biology and uses math to bridge its characteristics to the computational, digital space.
 The user can interact with a custom color picker. By tuning a color, one can experience the relationships between theory and practice in a straightforward way.
 In addition to that, the user can open a camera view that makes it tangible what it means to have a wider color space displayed.
@@ -16,3 +16,10 @@ There, AVFoundation is used to capture the video data. Then, a CIFilter is used 
 When the user wanders around with the playground open, one can discover which colors of the surrounding need a P3-display to be captured accurately.
 
 In summary, the project at hand gives the user the theoretical background to understand what a color space is, where its limitations are and why there is a need for a wider color space.
+
+
+## License
+
+Please note the LICENSE before making modifications to it.
+
+Copyright (c) 2018 Andreas Neusüß
