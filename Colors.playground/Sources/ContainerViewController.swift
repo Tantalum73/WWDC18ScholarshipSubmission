@@ -229,9 +229,9 @@ public final class ContainerViewController: UIViewController, ColorPickerViewDel
         usesP3ColorSpace = sender.isOn
     }
     @objc private func openCameraButtonPressed(sender: UIButton) {
-        //        let cameraViewController = CameraLiveViewController()
-        //        cameraViewController.view.tintColor = colorPicker.composedColor
-        //        present(cameraViewController, animated: true, completion: nil)
+        let cameraViewController = CameraLiveViewController()
+        cameraViewController.view.tintColor = colorPicker.composedColor
+        present(cameraViewController, animated: true, completion: nil)
     }
     
     
