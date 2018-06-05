@@ -11,7 +11,7 @@ import PlaygroundSupport
  
  The cells of each of these groups are stimulated by light of different wave lengths. The wavelength of the maximum stimulation varies between the three groups.
  
- The sensitivity of the cone cells were recorded in experiments by CIE (association, name noch einfügen), which started as early as 1931. An important result of the experiment was the numerical representation of wavelength sensitivity of the human eye.
+ The sensitivity of the cone cells were recorded in experiments by CIE (an association), which started as early as 1931. An important result of the experiment was the numerical representation of wavelength sensitivity of the human eye.
  *Tap on the image to see its content*
  
  *[Image taken from [here](https://cdn-images-1.medium.com/max/1600/0*ZBmRv_J2IapWPfPZ.)]*
