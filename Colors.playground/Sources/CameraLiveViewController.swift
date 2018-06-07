@@ -258,7 +258,7 @@ public final class CameraLiveViewController: UIViewController {
             return
         }
         session.addOutput(output)
-        output.connections.first?.videoOrientation = outputOrientation(for: UIDevice.current.orientation)
+        output.connections.first?.videoOrientation = outputOrientation(for: UIScreen.main.orientation)
         
         // For displaying in imageview
         let photoOutput = AVCapturePhotoOutput()
@@ -287,7 +287,7 @@ public final class CameraLiveViewController: UIViewController {
         super.viewWillTransition(to: size, with: coordinator)
         
         coordinator.animate(alongsideTransition: { (context) in
-            self.session.outputs.first!.connections.first!.videoOrientation = self.outputOrientation(for: UIDevice.current.orientation)
+            self.session.outputs.first!.connections.first!.videoOrientation = self.outputOrientation(for: UIScreen.main.orientation)
             
         }, completion: {_ in
             
@@ -378,5 +378,24 @@ extension CameraLiveViewController: AVCaptureVideoDataOutputSampleBufferDelegate
         }
         
         
+    }
+}
+
+
+extension UIScreen {
+    var orientation: UIDeviceOrientation {
+        let point = coordinateSpace.convert(CGPoint.zero, to: fixedCoordinateSpace)
+        switch (point.x, point.y) {
+        case (0, 0):
+            return .portrait
+        case let (x, y) where x != 0 && y != 0:
+            return .portraitUpsideDown
+        case let (0, y) where y != 0:
+            return .landscapeLeft
+        case let (x, 0) where x != 0:
+            return .landscapeRight
+        default:
+            return .unknown
+        }
     }
 }
